@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React In-class Exam, October 2025
 
 ## 1. Setup instructions
@@ -89,3 +90,7 @@ Once you have created your GitHub repository you can submit it to Moodle (no nee
 You can submit it here:
 
 [https://moodle.setu.ie/mod/assign/view.php?id=4606492](https://moodle.setu.ie/mod/assign/view.php?id=4606492)
+=======
+# ReactExam2025
+Repo for my in class exam
+>>>>>>> d8ecf481e7372fe3f88c22f9d3e61560e9fb581b
