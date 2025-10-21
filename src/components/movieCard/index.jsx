@@ -15,7 +15,6 @@ import IconButton from "@mui/material/IconButton";
 import Grid from "@mui/material/Grid";
 import Avatar from '@mui/material/Avatar';
 import img from '../../images/film-poster-placeholder.png';
-
 export default function MovieCard({ movie, action }) { 
 
   const { favorites, addToFavorites } = useContext(MoviesContext);
@@ -26,10 +25,15 @@ export default function MovieCard({ movie, action }) {
     movie.favorite = false
   }
 
-  const handleAddToFavorite = (e) => {
+  //format date
+  const formatDate = Date(movie.release_date);
+  
+  
+const handleAddToFavorite = (e) => {
     e.preventDefault();
     addToFavorites(movie);
   };
+
 
 
   return (
@@ -62,7 +66,7 @@ export default function MovieCard({ movie, action }) {
           <Grid size={{ xs: 6 }}>
             <Typography variant="h6" component="p">
               <CalendarIcon fontSize="small" />
-              {movie.release_date}
+              {formatDate.substring(4,16)}
             </Typography>
           </Grid>
           <Grid size={{ xs: 6 }}>
